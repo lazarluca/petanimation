@@ -1,0 +1,90 @@
+.bg {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: block;
+   max-width:90%;
+    height: 35vw;
+    background-image: url(img/background2.png);
+    animation: movebg 30s linear infinite;
+    animation-play-state: paused;
+    margin:auto;
+    border: solid black 10px;
+    
+}
+.mbg {
+    animation: movebg 30s linear infinite;
+    animation-play-state: running;
+}
+@keyframes movebg {to{background-position: -1200px;}}
+
+.petwalk {
+    background-image: url(img/petwalk.png);
+    height: 91px;
+    width: 93px;
+    margin:auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: movepet 1s steps(28) infinite;
+}
+@keyframes movepet {
+    to{
+         background-position: -2568px;        
+    }
+}
+
+.petjump {
+    background-image: url(img/petjump.png);
+    height: 91px;
+    width: 92px;
+    margin:auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: jumppet 1s steps(23) infinite;   
+}
+@keyframes jumppet {
+    to{
+         background-position: -2296px;        
+    }
+    
+    .petclose {
+    background-image: url(img/petclose.png);
+    height: 91px;
+    width: 93px;
+    margin:auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: petclose 3s steps(5) infinite;   
+}
+@keyframes petclose {
+    to{
+         background-position: -1587px;        
+    }
+
+    
+       .pettail {
+    background-image: url(img/pettail.png);
+    height: 91px;
+    width: 93px;
+    margin:auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: pettail 1s steps(28) infinite;   
+}
+@keyframes pettail {
+    to{
+         background-position: -1661px;        
+    }
+
